@@ -1,0 +1,13 @@
+<launch>
+
+  <!-- Compressed Image Topic -->
+  <arg name="image_topic" default="/pepper/camera/front/image_raw/compressed"/>
+
+
+  <node pkg="mask_detection" type="stream_and_save.py" name="stream_and_save" output="screen" >
+    <param name="image_topic" value="$(arg image_topic)" />
+  </node>
+
+  <node pkg="mask_detection" type="detection.py" name="detection" output="screen" />
+
+</launch>
