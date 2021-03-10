@@ -2,12 +2,16 @@
 
   <!-- Compressed Image Topic -->
   <arg name="image_topic" default="/pepper/camera/front/image_raw/compressed"/>
+  <arg name="sample"      default="false" />
 
 
   <node pkg="mask_detection" type="stream_and_save.py" name="stream_and_save" output="screen" >
-    <param name="image_topic" value="$(arg image_topic)" />
+    <param name="image_topic" value="$(arg image_topic)" unless="$(arg sample)"/>
+    <param name="image_topic" value="/chatter" if="$(arg sample)"/>
   </node>
 
   <node pkg="mask_detection" type="detection.py" name="detection" output="screen" />
+
+  <node pkg="mask_detection" type="publisher.py" name="publisher" output="screen" if="$(arg sample)"/>
 
 </launch>
