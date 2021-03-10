@@ -18,5 +18,5 @@ Usage:
 
 - roslaunch mask_detection mask_detection.launch sample:=true
 
-  will run detector that analyse images contained in mask_detection/samples folder.
+  detector will analyse images contained in mask_detection/samples folder.
 
