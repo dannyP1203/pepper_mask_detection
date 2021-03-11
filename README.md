@@ -1,8 +1,10 @@
-Pepper Mask Detection
+# Pepper Mask Detection
 
 - Install git LFS: https://github.com/git-lfs/git-lfs/wiki/Installation
 - Clone to SRC folder of your ros workspace
-	git clone https://github.com/dannyP1203/pepper_mask_detection.git
+'''
+git clone https://github.com/dannyP1203/pepper_mask_detection.git
+'''
 - Make setup.sh executable and run it 
 	./setup.sh
 - Build with catkin_make
