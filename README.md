@@ -7,7 +7,7 @@
 ```
 git clone https://github.com/dannyP1203/pepper_mask_detection.git
 ```
-- Make setup.sh executable and run it with `./setup.sh`
+- Make *setup.sh* executable and run it with `./setup.sh`
 - Build with catkin_make
 
 ## Usage:
