@@ -13,13 +13,16 @@ git clone https://github.com/dannyP1203/pepper_mask_detection.git
 ## Usage:
 
 - Run detector listening on topic /pepper/camera/front/image_raw/compressed
-	roslaunch mask_detection mask_detection.launch
-
+```
+roslaunch mask_detection mask_detection.launch
+```
 
 - Run detector listening on topic /topic
-	roslaunch mask_detection mask_detection.launch image_topic:="/topic"
-
+```
+roslaunch mask_detection mask_detection.launch image_topic:="/topic"
+```
 
 - Run detector that analyses images contained in mask_detection/samples folder
-	roslaunch mask_detection mask_detection.launch sample:=true
-
+```
+roslaunch mask_detection mask_detection.launch sample:=true
+```
