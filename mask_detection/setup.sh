@@ -18,4 +18,5 @@ pip install seaborn
 pip install scikit-learn
 pip install ipython
 
-echo -e "\nexport PYTHONPATH=\$PYTHONPATH:~/pepper_ws/development_ws/src/mask_detection/Mask_RCNN" >> ~/.bashrc
+chmod u+x scripts/*.py
+echo -e "\nexport PYTHONPATH=\$PYTHONPATH:~/pepper_ws/development_ws/src/pepper_mask_detection/mask_detection/Mask_RCNN" >> ~/.bashrc
