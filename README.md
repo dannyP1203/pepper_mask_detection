@@ -26,3 +26,8 @@ roslaunch mask_detection mask_detection.launch image_topic:="/topic"
 ```
 roslaunch mask_detection mask_detection.launch sample:=true
 ```
+
+**NB:** by default, the dataset Mask_Dataset.zip will not be downloaded. To download the whole repository use
+```
+git lfs pull --include="*" --exclude=""
+```
