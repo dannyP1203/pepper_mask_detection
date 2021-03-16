@@ -14,7 +14,7 @@ import itertools
 import colorsys
 
 import matplotlib
-matplotlib.use('TkAgg')
+#matplotlib.use('TkAgg')
 
 import numpy as np
 from skimage.measure import find_contours
